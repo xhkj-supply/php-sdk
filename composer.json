@@ -1,0 +1,24 @@
+{
+  "name": "xhkj-supply/php-sdk",
+  "description": "Xhkj supply API SDK for PHP",
+  "type": "library",
+  "keywords": ["supply", "xhkj", "sdk"],
+  "require": {
+    "php": ">=7.0"
+  },
+  "homepage": "http://www.xzwl1688.com/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xhkj",
+      "email": "1069945237@qq.com",
+      "homepage": "http://ju.wzzd.cn"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Xhkj\\Api\\": "src/Zhkj/Api"
+    }
+  }
+}
