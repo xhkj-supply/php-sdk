@@ -18,7 +18,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "Xhkj\\Api\\": "src/Zhkj/Api"
+      "Xhkj\\Api\\": "src/Xhkj/Api"
     }
   }
 }
