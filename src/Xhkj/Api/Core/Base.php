@@ -39,6 +39,8 @@ class Base
 			$this->paramMap['Api-App-Key'] = $app_key;
 		}
 
+		$this->paramMap['X-Token'] = "";
+
 
 		$this->preventAttack();
 

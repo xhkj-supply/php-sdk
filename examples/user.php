@@ -22,15 +22,11 @@ try {
 }
 
 //获取登录信息
-$param = [];
-$response = json_decode($supplyClient->getApiResponse("get","/api/base/userinfo",$param));
+//$param = [];
+//$response = json_decode($supplyClient->getApiResponse("post","/api/base/userinfo",$param));
 
 //用户退出
 //$param = [];
 //$response = json_decode($supplyClient->getApiResponse("post","/ssologin/logout",$param));
 
-//用户退出
-//$param = [];
-//$response = json_decode($supplyClient->getApiResponse("post","/ssologin/logout",$param));
-
-var_dump($response);
+var_dump($supplyClient);

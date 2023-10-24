@@ -36,7 +36,7 @@ class RequestClint
 			'Api-Nonce' => $Request->paramMap['Api-Nonce'],
 			'Api-Sign'=> $Request->paramMap['Api-Sign'],
 			'X-Token'=> $Request->paramMap['X-Token'],
-			'Authorization'=> "Bearer ".$Request->paramMap['X-Token']
+			'Authorization'=> $Request->paramMap['X-Token']
 		);
 
 		return self::curl_request($serverUrl, false ,$headers);
@@ -57,7 +57,7 @@ class RequestClint
 			'Api-Nonce' => $Request->paramMap['Api-Nonce'],
 			'Api-Sign'=> $Request->paramMap['Api-Sign'],
 			'X-Token'=> $Request->paramMap['X-Token'],
-			'Authorization'=> "Bearer ".$Request->paramMap['X-Token']
+			'Authorization'=> $Request->paramMap['X-Token']
 		);
 		return self::curl_get_body_request($serverUrl, $Request->body ,$headers);
 	}
@@ -78,7 +78,7 @@ class RequestClint
 			'Api-Nonce' => $Request->paramMap['Api-Nonce'],
 			'Api-Sign'=> $Request->paramMap['Api-Sign'],
 			'X-Token'=> $Request->paramMap['X-Token'],
-			'Authorization'=> "Bearer ".$Request->paramMap['X-Token']
+			'Authorization'=> $Request->paramMap['X-Token']
 		);
 		return self::curl_request($serverUrl, $Request->body,$headers);
 	}
@@ -100,7 +100,7 @@ class RequestClint
 			'Api-Nonce' => $Request->paramMap['Api-Nonce'],
 			'Api-Sign'=> $Request->paramMap['Api-Sign'],
 			'X-Token'=> $Request->paramMap['X-Token'],
-			'Authorization'=> "Bearer ".$Request->paramMap['X-Token']
+			'Authorization'=> $Request->paramMap['X-Token']
 		);
 		return self::curl_patch_request($serverUrl, $Request->body,$headers);
 	}

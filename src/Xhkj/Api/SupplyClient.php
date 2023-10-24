@@ -44,9 +44,8 @@ class SupplyClient extends Base
 		parent::__construct($appSecret,$appKey);
 
 		self::checkEnv();
-		$this->paramMap['X-Token']="";
 
-		$this->paramMap['X-Token'] = json_decode($this->getApiResponse("post","/ssologin/gettoken",['grant_type'=>"password",'username'=>$appKey, 'password'=>$appSecret]))->data->access_token;
+		$this->paramMap['X-Token'] = "Bearer ".json_decode($this->getApiResponse("post","/ssologin/gettoken",['grant_type'=>"password",'username'=>$appKey, 'password'=>$appSecret]))->data->access_token;
 
 	}
 
