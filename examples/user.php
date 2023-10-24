@@ -29,4 +29,8 @@ $response = json_decode($supplyClient->getApiResponse("get","/api/base/userinfo"
 //$param = [];
 //$response = json_decode($supplyClient->getApiResponse("post","/ssologin/logout",$param));
 
+//用户退出
+//$param = [];
+//$response = json_decode($supplyClient->getApiResponse("post","/ssologin/logout",$param));
+
 var_dump($response);
