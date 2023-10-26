@@ -26,8 +26,8 @@ $param = [];
 $response = json_decode($supplyClient->getApiResponse("post","/ssologin/refreshtoken",$param));
 
 //获取登录信息
-//$param = [];
-//$response = json_decode($supplyClient->getApiResponse("post","/api/base/userinfo",$param));
+$param = [];
+$response = json_decode($supplyClient->getApiResponse("post","/api/base/userinfo",$param));
 
 //用户退出
 //$param = [];
@@ -38,7 +38,7 @@ $response = json_decode($supplyClient->getApiResponse("post","/ssologin/refresht
 //$response = json_decode($supplyClient->getApiResponse("post","/api/base/bindteamuser",$param));
 
 //根据当前登录用户获取部门列表
-$param = [];
-$response = json_decode($supplyClient->getApiResponse("post","/api/dept/deptAuthChild",$param));
+//$param = [];
+//$response = json_decode($supplyClient->getApiResponse("post","/api/dept/deptAuthChild",$param));
 
 var_dump($response);
